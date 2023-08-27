@@ -1,0 +1,88 @@
+//basic html for the example fields needed
+
+<!DOCTYPE html>
+<html lang="en">
+<form enctype="multipart/form-data" method="post" name="fileinfo">
+  <p>
+    <label
+      >Your Shielding Location #1:
+      <input
+        type="text"
+        name="shield1"
+        placeholder="ex. bos, atl, ewr"
+        required
+        size="32"
+        maxlength="64" />
+    </label>
+  </p>
+    <p>
+    <label
+      >Your Shielding Location #2:
+      <input
+        type="text"
+        name="shield2"
+        placeholder="ex. bos, atl, ewr"
+        required
+        size="32"
+        maxlength="64" />
+    </label>
+  </p>
+    <p>
+    <label
+      >Your primary backend:
+      <input
+        type="text"
+        name="backend1"
+        placeholder="F_backend_1"
+        required
+        size="32"
+        maxlength="64" />
+    </label>
+  </p>
+    <p>
+    <label
+      >Your fallback backend:
+      <input
+        type="text"
+        name="backend2"
+        placeholder="F_backend_2"
+        required
+        size="32"
+        maxlength="64" />
+    </label>
+  </p>
+    <p>
+    <label
+      >Your primary geolocation:
+      <input
+        type="text"
+        name="geo1"
+        placeholder="US-East"
+        required
+        size="32"
+        maxlength="64" />
+    </label>
+  </p>
+    <p>
+    <label
+      >Your fallback geolocation:
+      <input
+        type="text"
+        name="geo2"
+        placeholder="US-West"
+        required
+        size="32"
+        maxlength="64" />
+    </label>
+  </p>
+  <p>
+    <label
+      >Make a VCL name:
+      <input type="text" name="filename" placeholder="filename" size="12" maxlength="32" />
+    </label>
+  </p>
+  <p>
+    <input type="submit" value="Generate the VCL!" />
+  </p>
+</form>
+<div id="output"></div>

@@ -1,0 +1,13 @@
+# This file describes a Fastly Compute@Edge package. To learn more visit:
+# https://developer.fastly.com/reference/fastly-toml/
+
+authors = ["sokhum@live.com"]
+description = ""
+language = "javascript"
+manifest_version = 3
+name = "js-geo-project"
+service_id = "mrRzZbU3tfbdPwjPUV35U5"
+
+[scripts]
+  build = "npm run build"
+  post_init = "npm install"

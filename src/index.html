@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generated VCL</title>
+</head>
+<body>
+    <h1>Custom Shielding/Fallback/Geosteering Generation Tool</h1>
+    <strong>This tool will take in two backends with shielding in different locations, healthchecks, and with geo steering preference, then output VCL you can copy and paste into VCL snippets. </strong>
+<br><br>
+        <form id="myForm" method="POST">
+            <strong>Please enter your primary and fallback backends. Please grab the values from the "show vcl" button in the configuration dashboard</strong>
+<br><br>            
+            <label for="backend1">Your primary backend:</label>
+            <input type="text" id="backend1" name="backend1" placeholder="ex: F_backend_1" required><br><br>
+            <label for="backend2">Your fallback backend:</label>
+            <input type="text" id="backend2" name="backend2" placeholder="ex: F_backend_2" required><br><br>
+            <strong>Please enter your main and backup geolocations. This uses the <a href="https://developer.fastly.com/reference/vcl/variables/server/server-region/">server.region</a> names</strong>
+<br><br>
+            <label for="geo1">Your primary geolocation:</label>
+            <input type="text" id="geo1" name="geo1" placeholder="ex: US-East" required><br><br>
+            <label for="geo2">Your fallback geolocation:</label>
+            <input type="text" id="geo2" name="geo2" placeholder="ex: US-West" required><br><br>
+            <input type="submit" value="Generate VCL">
+        </form>
+</body>
+</html>
